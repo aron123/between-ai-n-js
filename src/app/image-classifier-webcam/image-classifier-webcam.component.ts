@@ -35,7 +35,6 @@ export class ImageClassifierWebcamComponent implements OnInit, AfterViewInit {
       navigator.mediaDevices.getUserMedia({ video: true })
         .then((stream) => {
           vid.srcObject = stream;
-
         })
         .catch((err0r) => {
           console.log('Something went wrong!');
